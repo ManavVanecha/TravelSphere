@@ -5,7 +5,7 @@ import { LiveUpdateImage } from '../../components';
 import { RecentExpense } from '../../components';
 import { Button } from '../../components';
 import { Post } from '../../layouts';
-import './feed.css';
+import './Feed.css';
 import Path from '../../constants/Path';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
