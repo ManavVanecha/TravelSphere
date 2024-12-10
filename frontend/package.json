@@ -39,6 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://travel-sphere-liz3.vercel.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
