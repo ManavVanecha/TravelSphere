@@ -59,7 +59,7 @@ const AllPlan = (props) => {
 
 		await axios({
 			method:'post',
-			url:'http://localhost:5001/plan/mail/sendmail',
+			url:'https://travel-sphere-zeta.vercel.app/plan/mail/sendmail',
 			data:{
 				to:email,
 			},
@@ -87,7 +87,7 @@ const AllPlan = (props) => {
 			let message = 'Confirm delete?';
 			if (window.confirm(message) === true) {
 				axios
-					.delete(`http://localhost:5001/plan/delete/${data}`)
+					.delete(`https://travel-sphere-zeta.vercel.app/plan/delete/${data}`)
 					.catch((error) => {
 						console.log(error);
 					});
@@ -124,7 +124,7 @@ const AllPlan = (props) => {
 
 	const fetchPlan = async () => {
 		const response = await axios.get(
-			'http://localhost:5001/plan/'
+			'https://travel-sphere-zeta.vercel.app/plan/'
 		);
 		props.setProgress(100);
 		setPlans(response.data);

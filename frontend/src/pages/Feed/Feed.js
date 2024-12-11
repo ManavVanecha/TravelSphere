@@ -26,7 +26,7 @@ const Feed = () => {
 	useEffect(() => {
 		// fetch all posts from database
 		axios
-			.get(`http://localhost:5001/post/view` , 
+			.get(`https://travel-sphere-zeta.vercel.app/post/view` , 
 				{
 					headers : {
 						'Authorization' : `Bearer ${token}`
@@ -37,14 +37,14 @@ const Feed = () => {
 			});
 		// detch all live updates from database
 		axios
-			.get(`http://localhost:5001/liveupdate/view`)
+			.get(`https://travel-sphere-zeta.vercel.app/liveupdate/view`)
 			.then(function (response) {
 				dispatch(createLiveUpdate(response.data));
 			})
 			.catch((err) => {
 				console.log(err);
 			});
-		axios.get('http://localhost:5001/trip' , {
+		axios.get('https://travel-sphere-zeta.vercel.app/trip' , {
 			headers : {
 				'Authorization' : `Bearer ${token}`
 			}

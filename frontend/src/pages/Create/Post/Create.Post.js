@@ -106,7 +106,7 @@ function CreatePost() {
           image !== ""
         ) {
           await axios
-            .post("http://localhost:5001/post/create", formData, {
+            .post("https://travel-sphere-zeta.vercel.app/post/create", formData, {
               headers: {
                 "Content-Type": "multipart/form-data",
                 Authorization: `Bearer ${token}`,

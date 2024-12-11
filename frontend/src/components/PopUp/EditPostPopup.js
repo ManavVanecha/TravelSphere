@@ -68,7 +68,7 @@ function EditPostPopup(props) {
 		const getPostData = () => {
 			axios
 				.get(
-					`http://localhost:5001/post/viewById/${props.postId}`
+					`https://travel-sphere-zeta.vercel.app/post/viewById/${props.postId}`
 				)
 				.then(function (response) {
 					setLocation(response.data.location);
@@ -83,7 +83,7 @@ function EditPostPopup(props) {
 		if (!errorMessage.locationError && !errorMessage.descriptionError) {
 			axios
 				.put(
-					`http://localhost:5001/post/update/${props.postId}`,
+					`https://travel-sphere-zeta.vercel.app/post/update/${props.postId}`,
 					{
 						location: location,
 						description: description,

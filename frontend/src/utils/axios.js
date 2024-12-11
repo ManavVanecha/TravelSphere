@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 const axiosInstance = Axios.create({
-  baseURL: "http://localhost:5001", // Backend URL
+  baseURL: "https://travel-sphere-zeta.vercel.app", // Backend URL
 });
 
 // Attach token to every request

@@ -67,7 +67,7 @@ function Plan() {
 			(async function () {
 				await axios({
 					method: 'post',
-					url: 'http://localhost:5001/plan/create',
+					url: 'https://travel-sphere-zeta.vercel.app/plan/create',
 					data: {
 						firstName: formValues.firstName,
 						lastName: formValues.lastName,

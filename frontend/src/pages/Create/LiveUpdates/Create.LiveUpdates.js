@@ -57,7 +57,7 @@ const CreateLiveUpdates = () => {
 		if (errorMessage === '' && image !== undefined) {
 			axios
 				.post(
-					'http://localhost:5001/liveUpdate/create',
+					'https://travel-sphere-zeta.vercel.app/liveUpdate/create',
 					{
 						liveUpdate: formValues.liveUpdate,
 					},

@@ -71,7 +71,7 @@ function RegistrationForm() {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
             console.log(formValues);
             
-          await Axios.post("http://localhost:5001/register", {
+          await Axios.post("https://travel-sphere-zeta.vercel.app/register", {
             firstname: formValues.fname,
             lastname: formValues.lname,
             emailid: formValues.email,
