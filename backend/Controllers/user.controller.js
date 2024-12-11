@@ -97,7 +97,7 @@ const updateUserById = async (req, res) => {
   // Append the image URL to the request body if a file is provided
 //   if (req.file) {
 // 	console.log("File --- -- -", req.file)
-//     updatedData.profilePic = `http://localhost:5001/Images/${req.file.filename}`;
+//     updatedData.profilePic = `https://travel-sphere-zeta.vercel.app/Images/${req.file.filename}`;
 //   }
 
   try {

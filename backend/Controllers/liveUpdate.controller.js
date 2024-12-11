@@ -38,7 +38,7 @@ const createLiveUpdate = (req, res) => {
 	const userId = user._id;
 	const userName = user.userName;
 	const image =
-		'http://localhost:5001/Images/' + req.file.filename;
+		'https://travel-sphere-zeta.vercel.app/Images/' + req.file.filename;
 
 	const createLiveUpdate = async () => {
 		const liveUpdate = new LiveUpdate({

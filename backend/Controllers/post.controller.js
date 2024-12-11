@@ -91,7 +91,7 @@ const createPost = (req, res) => {
 
 	const userName = req.body.userName;
 	const image =
-		'http://localhost:5001/Images/' + req.file.filename;
+		'https://travel-sphere-zeta.vercel.app/Images/' + req.file.filename;
 	const location = req.body.location;	
 	const description = req.body.description;
 	const user = req.user;

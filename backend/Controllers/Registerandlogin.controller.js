@@ -13,7 +13,7 @@ const registerUser = async (req, resp) => {
   try {
     const {emailid} = req.body;
     const image =
-		'http://localhost:5001/Images/' + req.file.filename;
+		'https://travel-sphere-zeta.vercel.app/Images/' + req.file.filename;
 
     let users = await User.findOne({emailid});
     if (users) {
